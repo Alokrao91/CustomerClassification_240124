@@ -23,9 +23,13 @@ ML algorithms used:
 5) SVM
 6) GradientBoostingClassifier
 
+
 Hyperparameter Tuning:
+
 1)GridSearchCV
+
 2)RandomizedSearchCV
+
 Created Own Ensemble of classfiers useing different algorithms.
 BEST MODEL Prediction Is Support Vector Machines(svm)-SVC WITH TRAIN AND VALIDATION SCORE
 MeanTrainScore -0.880569808285088

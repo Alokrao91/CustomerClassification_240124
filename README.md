@@ -1,3 +1,14 @@
+![image alt](https://github.com/Alokrao91/CustomerClassification_240124/blob/main/customer%20classification.jpg?raw=true)
+
+
+
+
+
+
+
+
+
+
 ![image alt](https://github.com/Alokrao91/CustomerClassification_240124/blob/main/revenue-from-existing-customers.jpg?raw=true)
 
 

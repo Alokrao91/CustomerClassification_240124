@@ -15,6 +15,17 @@ Machine Learning Pipleline:
 6) Iter over to improve the performance.
 
 
+
+modeling : 
+1) we are going to start with the basic model and then optimize the model to get the best performance!!.
+   
+2) class 2 are low revenue customers and class 1 are high revenue customers.
+ 
+3) we see that there exists a class imbalance.
+ 
+4) class imbalance is a problem (90% are 2 and 10% are 1).
+
+
 ML algorithms used:
 1) logistic regression
 2) random forest
@@ -29,6 +40,7 @@ Hyperparameter Tuning:
 1)GridSearchCV
 
 2)RandomizedSearchCV
+
 
 Created Own Ensemble of classfiers useing different algorithms.
 BEST MODEL Prediction Is Support Vector Machines(svm)-SVC WITH TRAIN AND VALIDATION SCORE

@@ -31,9 +31,7 @@
 # CustomerClassification_240124
 A Capstone project
 
-
-Customer Classification – Capstone Project
-Objective
+## Objective
 The goal of this project is to classify customers of a stock broking firm into two categories:
 
 Class 1: High Revenue Customers
@@ -66,13 +64,13 @@ Evaluated using F1-score, accuracy, precision, and recall due to class imbalance
 Tuned hyperparameters and experimented with ensemble models to improve performance.
 
 # Challenge: Class Imbalance
-There is a significant imbalance in the target classes:
+1) There is a significant imbalance in the target classes:
 
-90% of customers are Class 2 (Low Revenue)
+  . 90% of customers are Class 2 (Low Revenue)
 
-10% of customers are Class 1 (High Revenue)
+  . 10% of customers are Class 1 (High Revenue)
 
-Class imbalance was addressed during model selection and evaluation using metrics like F1-score, which accounts for imbalanced classes.
+2) Class imbalance was addressed during model selection and evaluation using metrics like F1-score, which accounts for imbalanced classes.
 
 # Algorithms Used
 Several machine learning algorithms were implemented:

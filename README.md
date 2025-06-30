@@ -31,57 +31,89 @@
 # CustomerClassification_240124
 A Capstone project
 
-We are going to solve a customer classification Problem. The problem can be summarized as below:
-1) Given the details about the customer our objective is to identify which customers is a potential high revenue customers and which customers are low revenue customers for a stock brocking firm.
-2) The problem is a supervised classification problem.
 
-Machine Learning Pipleline:
+Customer Classification – Capstone Project
+Objective
+The goal of this project is to classify customers of a stock broking firm into two categories:
 
-1) Load the Data into python.
-2) Split the data into train and val (only when validation set is not provided separately).
-3) Exploratory Data Analysis and Preprocessing.
-4) Model Building.
-5) Model Evaluation.
-6) Iter over to improve the performance.
+Class 1: High Revenue Customers
 
+Class 2: Low Revenue Customers
 
+By analyzing customer data, we aim to predict which customers are likely to generate high revenue, enabling the firm to focus its marketing and service efforts more effectively.
 
-modeling : 
-1) we are going to start with the basic model and then optimize the model to get the best performance!!.
-   
-2) class 2 are low revenue customers and class 1 are high revenue customers.
- 
-3) we see that there exists a class imbalance.
- 
-4) class imbalance is a problem (90% are 2 and 10% are 1).
+This is a supervised classification problem based on labeled historical data.
 
+# Machine Learning Pipeline
+The following steps were used to build the predictive model:
 
-ML algorithms used:
-1) logistic regression
-2) random forest
-3) KNeihborsClassifier
-4) DecisionTreeClassifier
-5) SVM
-6) GradientBoostingClassifier
+1)Data Loading
+Imported the customer dataset into Python for processing.
 
+2)Data Splitting
+Split the dataset into training and validation sets (if a separate validation set is not provided).
 
-Hyperparameter Tuning:
+3)Exploratory Data Analysis (EDA) & Preprocessing
+Explored distributions, identified patterns, handled missing values, and normalized/encoded features.
 
-1)GridSearchCV
+4)Model Building
+Implemented multiple classification algorithms, starting from basic models and moving toward more complex ones.
 
-2)RandomizedSearchCV
+5)Model Evaluation
+Evaluated using F1-score, accuracy, precision, and recall due to class imbalance.
 
+6)Model Optimization
+Tuned hyperparameters and experimented with ensemble models to improve performance.
 
-Created Own Ensemble of classfiers useing different algorithms.
-best values for Ensemble of classifiers like bestlr+bestrf+knn(best logistic regression,best random forest, KNeighborsClassifier)
+# Challenge: Class Imbalance
+There is a significant imbalance in the target classes:
 
- train F1 Score - 0.8803771361225692
- 
- val F1 Score - 0.8212560386473431
- 
- 
-BEST MODEL Prediction Is Support Vector Machines(svm)-SVC WITH TRAIN AND VALIDATION SCORE
+90% of customers are Class 2 (Low Revenue)
 
-MeanTrainScore -0.880569808285088
+10% of customers are Class 1 (High Revenue)
 
-MeanTestScore - 0.850693137946377
+Class imbalance was addressed during model selection and evaluation using metrics like F1-score, which accounts for imbalanced classes.
+
+# Algorithms Used
+Several machine learning algorithms were implemented:
+
+1)Logistic Regression
+
+2)Random Forest
+
+3)K-Nearest Neighbors (KNN)
+
+4)Decision Tree
+
+5)Support Vector Machine (SVM)
+
+6)Gradient Boosting Classifier
+
+# Hyperparameter Tuning
+Two tuning strategies were applied to improve model performance:
+
+1)GridSearchCV – Exhaustive search over parameter grid
+
+2)RandomizedSearchCV – Random search over parameters for quicker results
+
+ # Ensemble Model
+An ensemble classifier was created by combining the best versions of:
+
+1)Logistic Regression
+
+2)Random Forest
+
+3)KNeighborsClassifier
+
+This hybrid approach yielded strong performance across training and validation sets.
+
+# Performance Metrics
+. Train F1 Score: 0.880
+
+. Validation F1 Score: 0.821
+
+The best performing model was Support Vector Machine (SVC), achieving:
+
+. Mean Train Score: 0.881
+
+. Mean Validation Score: 0.851
